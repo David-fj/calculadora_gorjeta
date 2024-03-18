@@ -54,7 +54,7 @@ main {
     background-color: var(--green-100);
     padding: 0.4rem 1.2rem;
     display: flex;
-    align-items: cneter;
+    align-items: center;
     justify-content: space-between;
     border-radius: 0.3125rem;
 }
@@ -160,4 +160,23 @@ main {
     text-transform: uppercase;
     font-size: 1.25rem;
     padding-block: 0.5rem;
+}
+
+@media(min-width: 920px) {
+    main {
+        display: flex;
+        gap: 3rem;
+        padding: 3rem;
+        border-radius: 1.5625rem;
+        max-width: 37.5rem;
+        margin-inline: auto;
+    }
+
+    main section {
+        width: 100%;
+    }
+
+    .gorjeta div {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
